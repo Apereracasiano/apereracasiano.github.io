@@ -4,51 +4,135 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Contacta con nosotros</title>
+  <title>EASD Gran Canaria</title>
   <!-- cssbootstrap -->
   <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
   <!-- css hecho por mi -->
-  <link rel="stylesheet" href="contacto.css">
+  <link rel="stylesheet" href="css/CONTACTO.css">
+  <link rel="stylesheet" href="css/MENUYFOOTER.css">
   <!-- Fuente de Google Fonts -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
-
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <input type="checkbox" id="botonmenu">
-    <label for="botonmenu"><img src="resources/icon/LOGOSINLETRAS.svg" alt="logotipo"></label>
-    <nav class="menu">
-      <ul>
-        <li><a id="vueltainicio" href="PAGINAPRINCIPAL.html"><img src="resources/icon/LOGO.svg" alt="logotipo"></a>
-        </li>
-        <li><a href="">Oferta Académica</a>
-          <ul>
-            <li><a href="bachillerato/BACHILLERATO.html">Bachillerato</a></li>
-            <li><a href="ciclo-medio/LISTACURSOSMEDIO.html">Ciclos Medios</a></li>
-            <li><a href="ciclo-superior/LISTACURSOSSUPERIOR.html">Ciclos Superiores</a></li>
-            <li><a href="enseñanza-superior/LISTACURSOSDISEÑO.html">Diseño Superior</a></li>
-          </ul>
-        </li>
-        <li><a href="EASD.html">EASD</a></li>
-        <li><a href="ACTUALIDAD.html">Actualidad</a></li>
-        <li><a href="CONTACTO.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <form class="form">
-    <h3>Contáctanos</h3>
-    <p type="Nombre:"><input placeholder="Escribe tu nombre aquí.."></input></p>
-    <p type="Apellidos:"><input placeholder="Escribe tus apellidos aquí.."></input></p>
-    <p type="Email:"><input placeholder="Escribe tu email aquí.."></input></p>
-    <p type="Mensaje:"><input placeholder="Escribe tu mensaje aquí.."></input></p>
-    <button>Enviar</button>
-    <div>
-      <span class="fa fa-phone"></span>+34 928 31 27 79
-      <span class="fa fa-envelope-o"></span> 35003034@gobiernodecanarias.org
-    </div>
-  </form>
+  <div class="wrapper">
+    <!-- encabezado -->
+    <header>
+      <!-- menú -->
+        <div class="menu-escritorio">
+          <nav class="menu">
+            <ul>
+              <li><a id="vueltainicio" href="PAGINAPRINCIPAL.html"><img src="resources/icon/LOGO.svg" alt="logotipo"></a></li>
+              <li><a href="">OFERTA ACADÉMICA</a>
+                <ul>
+                  <li><a href="bachillerato/BACHILLERATO.html">BACHILLERATO</a></li>
+                  <li><a href="ciclo-medio/LISTACURSOSMEDIO.html">CICLOS MEDIOS</a></li>
+                  <li><a href="ciclo-superior/LISTACURSOSSUPERIOR.html">CICLOS SUPERIORES</a></li>
+                  <li><a href="enseñanza-superior/LISTACURSOSDISEÑO.html">ENSEÑANZAS SUPERIORES</a></li>
+                </ul>
+              </li>
+              <li><a href="EASD.html">EASD</a></li>
+              <li><a href="ACTUALIDAD.html">ACTUALIDAD</a></li>
+              <li><a href="CONTACTO.html">CONTACTO</a></li>
+            </ul>
+            </nav>
+            </div>
+            <div class="menu-responsive">
+              <a href="#" class="boton-menu">Menú<img id="icono-menu" src="resources/icon/LOGOSINLETRAS.svg" alt="logotipo"></a>
+              <ul class="m-responsive">
+                <li><a href="PAGINAPRINCIPAL.html">Inicio</a></li>
+                <li><a href="">Oferta académica</a>
+                  <ul>
+                    <li><a href="bachillerato/BACHILLERATO.html">Bachillerato</a></li>
+                    <li><a href="ciclo-medio/LISTACURSOSMEDIO.html">Ciclos medios</a></li>
+                    <li><a href="ciclo-superior/LISTACURSOSSUPERIOR.html">Ciclos superiores</a></li>
+                    <li><a href="enseñanza-superior/LISTACURSOSDISEÑO.html">Enseñanzas superiores</a></li>
+                  </ul>
+                </li>
+                <li><a href="EASD.html">EASD</a></li>
+                <li><a href="ACTUALIDAD.html">Actualidad</a></li>
+                <li><a href="CONTACTO.html">Contacto</a></li>
+              </ul>
+            </div>
+      <!-- final del menú -->
+    </header>
+    <!-- final del encabezado -->
+    <!-- resto de la página -->
+    <main id="container">
+      <section class="contact--form">
+        <form>
+          <fieldset class="camposquerellenar">
+            <div class="arriba">
+              <div class="nombreyapellidos">
+                <input type="text" class="input" name="" value="" placeholder="Nombre" required>
+                <input type="text" class="input" input="input" name="" value="" placeholder="Apellidos" required>
+              </div>
+              <div class="correoytelefono">
+                <input type="text" class="input" input="email" name="" value="" placeholder="Correo" required>
+                <input type="text" class="input" input="tel" name="" value="" placeholder="Teléfono" required>
+              </div>
+            </div>
+            <div class="abajo">
+              <div class="mensajeticksyboton">
+                <textarea name="Mensaje" rows="8" cols="60" required placeholder="Escriba el mensaje que desee"></textarea><br>
+                <input type="checkbox" name="" value="" required><label>He leido y acepto las Condiciones de Uso y Políticas de Privacidad*</label><br>
+                <input type="checkbox" name="" value="" required><label>Deseo recibir información sobre actividades y cursos de la EASD</label><br>
+                <input type="submit" name="Enviar" value="Enviar">
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      <aside class="lateral">
+        <div>
+          <h1>CONTACTO</h1>
+          <p>Av. de Canarias, 44, Las Palmas de Gran Canaria, 35016</p>
+          <p>TLF: 928 31 27 79 / FAX: 928 32 30 14</p>
+          <p>35003034@gobiernodecanarias.org</p>
+        </div>
+        <div>
+          <h1>REDES SOCIALES</h1>
+          <div class="botones">
+            <a href="https://www.facebook.com/easdgrancanaria/?ref=page_internal"><img src="resources/icon/facebook.svg" alt="facebook"></a>
+            <a href="https://www.youtube.com/channel/UCYT_urCWL5KVfrp1mU6tgiA"><img src="resources/icon/youtube.svg" alt="youtube"/></a>
+            <a href="https://www.instagram.com/easdgc/"><img src="resources/icon/instagram.svg" alt="instagram"></a>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <!-- Footer -->
+    <footer class=containerfooter>
+      <div class="elemento--footer">
+        <img class="iconofooter" src="resources/icon/localizacion.svg" alt="chincheta">
+        <p>Av. de Canarias, 44</p>
+        <p>Las Palmas de Gran Canaria, 35219</p>
+      </div>
+      <div class="elemento--footer">
+        <img class="iconofooter" src="resources/icon/telefono.svg" alt="telefono">
+        <p>+34 928 31 27 79</p>
+      </div>
+      <div class="elemento--footer">
+        <img class="iconofooter" src="resources/icon/mail-footer.svg" alt="correo">
+        <p>35003034@gobiernodecanarias.org</p>
+      </div>
+      <div class="elemento--footer">
+        <div class="redes--sociales">
+          <a title="Facebook" href="https://www.facebook.com/easdgrancanaria/?ref=page_internal"><img class="icono" src="resources/icon/facebook.svg" alt="facebook"/></a>
+          <a title="Youtube" href="https://www.youtube.com/channel/UCYT_urCWL5KVfrp1mU6tgiA"><img class="icono" src="resources/icon/youtube.svg" alt="youtube"/></a>
+          <a title="Instagram" href="https://www.instagram.com/easdgc/"><img class="icono" src="resources/icon/instagram.svg" alt="instagram"/></a>
+        </div>
+        <div id="legal">
+          <p>Servicios / Soporte</p>
+          <p>Términos y condiciones / Politica de publicidad</p>
+        </div>
+      </div>
+    </footer>
+    <!-- final del footer -->
+  </div>
+  <!-- final del wrapper -->
+  <!-- JavaScript hecho por mi -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="js/main.js" charset="utf-8"></script>
 </body>
-
 </html>

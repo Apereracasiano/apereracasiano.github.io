@@ -12,6 +12,7 @@
 
   <!-- Fuente de Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,39 +20,62 @@
     <!-- encabezado -->
     <header>
       <!-- menú -->
-      <input type="checkbox" id="botonmenu">
-      <label for="botonmenu"><img src="../resources/icon/LOGOSINLETRAS.svg" alt="logotipo"></label>
-      <nav class="menu">
-        <ul>
-          <li><a id="vueltainicio" href="../PAGINAPRINCIPAL.html"><img src="../resources/icon/LOGO.svg" alt="logotipo"></a></li>
-          <li><a href="">OFERTA ACADÉMICA</a>
+        <div class="menu-escritorio">
+          <nav class="menu">
             <ul>
-              <li><a href="../bachillerato/BACHILLERATO.html">BACHILLERATO</a></li>
-              <li><a href="../ciclo-medio/LISTACURSOSMEDIO.html">CICLOS MEDIOS</a></li>
-              <li><a href="../ciclo-superior/LISTACURSOSSUPERIOR.html">CICLOS SUPERIORES</a></li>
-              <li><a href="../enseñanza-superior/LISTACURSOSDISEÑO.html">DISEÑO SUPERIOR</a></li>
+              <li><a id="vueltainicio" href="../PAGINAPRINCIPAL.html"><img src="../resources/icon/LOGO.svg" alt="logotipo"></a></li>
+              <li><a href="">OFERTA ACADÉMICA</a>
+                <ul>
+                  <li><a href="../bachillerato/BACHILLERATO.html">BACHILLERATO</a></li>
+                  <li><a href="../ciclo-medio/LISTACURSOSMEDIO.html">CICLOS MEDIOS</a></li>
+                  <li><a href="../ciclo-superior/LISTACURSOSSUPERIOR.html">CICLOS SUPERIORES</a></li>
+                  <li><a href="../enseñanza-superior/LISTACURSOSDISEÑO.html">ENSEÑANZAS SUPERIORES</a></li>
+                </ul>
+              </li>
+              <li><a href="../EASD.html">EASD</a></li>
+              <li><a href="../ACTUALIDAD.html">ACTUALIDAD</a></li>
+              <li><a href="../CONTACTO.html">CONTACTO</a></li>
             </ul>
-          </li>
-          <li><a href="../EASD.html">EASD</a></li>
-          <li><a href="../ACTUALIDAD.html">ACTUALIDAD</a></li>
-          <li><a href="../CONTACTO.html">CONTACTO</a></li>
-        </ul>
-      </nav>
+            </nav>
+            </div>
+            <div class="menu-responsive">
+              <a href="#" class="boton-menu">Menú<img id="icono-menu" src="../resources/icon/LOGOSINLETRAS.svg" alt="logotipo"></a>
+              <ul class="m-responsive">
+                <li><a href="../PAGINAPRINCIPAL.html">Inicio</a></li>
+                <li><a href="">Oferta académica</a>
+                  <ul>
+                    <li><a href="../bachillerato/BACHILLERATO.html">Bachillerato</a></li>
+                    <li><a href="../ciclo-medio/LISTACURSOSMEDIO.html">Ciclos medios</a></li>
+                    <li><a href="../ciclo-superior/LISTACURSOSSUPERIOR.html">Ciclos superiores</a></li>
+                    <li><a href="../enseñanza-superior/LISTACURSOSDISEÑO.html">Enseñanzas superiores</a></li>
+                  </ul>
+                </li>
+                <li><a href="../EASD.html">EASD</a></li>
+                <li><a href="../ACTUALIDAD.html">Actualidad</a></li>
+                <li><a href="../CONTACTO.html">Contacto</a></li>
+              </ul>
+            </div>
       <!-- final del menú -->
     </header>
     <!-- final del encabezado -->
     <!-- resto de la página -->
     <main class="container">
-<div class="grafico--impreso">
-  <img src="" alt="">
-  <h1></h1>
-  <p></p>
-</div>
-<div class="grafico--interactivo">
-  <img src="" alt="">
-  <h1></h1>
-  <p></p>
-</div>
+      <div class="lista_ciclo_medio">
+        <div class="impar">
+          <a href="grafico-impreso/GRAFICO-IMPRESO.html"><img src="../resources/img/ciclo_medio/grafica_impresa.jpg" alt="Gráfica Impresa"></a>
+          <div class="texto">
+            <a href="grafico-impreso/GRAFICO-IMPRESO.html"><h1>Asistencia al Producto Gráfico Impreso</h1></a>
+            <a href="grafico-impreso/GRAFICO-IMPRESO.html"><p class="parrafo">Este ciclo está orientado a la interpretación de proyectos gráficos, realización de tareas de tratamiento, maquetación y composición de texto e imagenes.</p></a>
+          </div>
+        </div>
+        <div class="par">
+          <a href="grafico-interactivo/GRAFICO-INTERACTIVO.html"><img src="../resources/img/ciclo_medio/grafica_interactiva.jpg" alt="Gráfica Interactiva"></a>
+          <div class="texto">
+            <a href="grafico-interactivo/GRAFICO-INTERACTIVO.html"><h1>Asistencia al Producto Gráfico Interactivo</h1></a>
+            <a href="grafico-interactivo/GRAFICO-INTERACTIVO.html"><p class="parrafo">Este ciclo está orientacio a la interpretación de especificaciones de un proyecto gráfico, a la realización de tareas de producción de elementos en soporte web y multimedia.</p></a>
+          </div>
+      </div>
+    </div>
     </main>
     <!-- Footer -->
     <footer class=containerfooter>
@@ -70,10 +94,9 @@
       </div>
       <div class="elemento--footer">
         <div class="redes--sociales">
-          <img class="icono" src="../resources/icon/facebook.svg" alt="facebook">
-          <img class="icono" src="../resources/icon/mail.svg" alt="correo">
-          <img class="icono" src="../resources/icon/twitter.svg" alt="twitter">
-          <img class="icono" src="../resources/icon/instagram.svg" alt="instagram">
+          <a title="Facebook" href="https://www.facebook.com/easdgrancanaria/?ref=page_internal"><img class="icono" src="../resources/icon/facebook.svg" alt="facebook"/></a>
+          <a title="Youtube" href="https://www.youtube.com/channel/UCYT_urCWL5KVfrp1mU6tgiA"><img class="icono" src="../resources/icon/youtube.svg" alt="youtube"/></a>
+          <a title="Instagram" href="https://www.instagram.com/easdgc/"><img class="icono" src="../resources/icon/instagram.svg" alt="instagram"/></a>
         </div>
         <div id="legal">
           <p>Servicios / Soporte</p>
@@ -88,6 +111,8 @@
   <script src="bootstrap-4.4.1-dist/js/jquery-3.2.1.slim.min.js" charset="utf-8"></script>
   <script src="bootstrap-4.4.1-dist/js/popper.min.js" charset="utf-8"></script>
   <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js" charset="utf-8"></script>
+  <!-- JavaScript hecho por mi -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="../js/main.js" charset="utf-8"></script>
 </body>
-
 </html>
