@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: white;
+  font-size: 80px;
+  text-decoration: none;
+  padding: 5px 60px;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Myriad Pro";
+  font-weight: bold;
+  color: #fff;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.header {
+  background: #ffffff;
+  color: #235ed6;
+  height: 80px;
+}
+
+.main-nav li {
+  display: inline-block;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.main-nav li {
+  display: inline-block;
+}
+
+.main-nav li a {
+  color: #235ed6;
+  text-decoration: none;
+  padding: 5px 60px;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.main-nav li.active a {
+  border: 1px solid #235ed6;
+}
+
+.main-nav li a:hover {
+  border: 1px solid #235ed6;
+}
+
+.logo {
+  margin: 25px;
+  height: 40px;
+}
+
+body {
+  background-color: #0a0a0a;
+}
+
+.oferta {
+  text-align: center;
+}
+
+.botones {
+  text-align: center;
+}
+
+.btn {
+  font-size: 18px;
+  color: #fff;
+  margin: 5px;
+  padding: 7px 22px;
+  text-decoration: none;
+  font-family: "Myriad Pro", sans-serif;
+  border: 3px solid white;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+.boton1:hover {
+  background: #1b4aaa;
+}
+
+.boton2:hover {
+  background: #1b4aaa;
+}
+
+.zoom1:hover img {
+  transform: scale(1.1);
+}
+
+.zoom2:hover img {
+  transform: scale(1.1);
+}
+
+.zoom3:hover img {
+  transform: scale(1.1);
+}
+
+.zoom4:hover img {
+  transform: scale(1.1);
+}
+
+.ul1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ul1 li {
+  float: left;
+}
+
+.ul2 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ul2 li {
+  float: left;
+}
